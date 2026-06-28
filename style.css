@@ -137,40 +137,27 @@ display: none;
 /* CARDS ESTILO NETFLIX */
 
 .card {
-position: relative;
+  min-width: 220px;
+  width: 220px;
+  height: 124px;
 
-min-width: 280px;
-height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
 
-border-radius: 8px;
+  background: #222;
 
-overflow: hidden;
-
-background: #222;
-
-transition:
-transform 0.25s ease,
-box-shadow 0.25s ease;
-
-cursor: pointer;
+  transition: transform 0.25s;
 }
 
 .card:hover {
-transform: scale(1.12);
-z-index: 20;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,0.8);
+  transform: scale(1.08);
 }
 
-/* IMAGENES */
-
 .card-image {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 
-object-fit: cover;
-display: block;
+  object-fit: cover;
 }
 
 /* TITULO SOBRE IMAGEN */
