@@ -137,16 +137,18 @@ display: none;
 /* CARDS ESTILO NETFLIX */
 
 .card {
-  min-width: 200px;
-  width: 200px;
-  height: 100px;
+  width: 320px;
+  min-width: 320px;
 
-  border-radius: 8px;
+  height: 180px;
+
+  border-radius: 12px;
   overflow: hidden;
 
   background: #222;
 
-  transition: transform 0.25s;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -158,6 +160,7 @@ display: none;
   height: 100%;
 
   object-fit: cover;
+  display: block;
 }
 
 /* TITULO SOBRE IMAGEN */
