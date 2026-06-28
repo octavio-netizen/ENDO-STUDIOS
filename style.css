@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px);
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  background: linear-gradient(to right, black, transparent),
+              url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.hero-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* ROWS */
+.row {
+  padding: 20px;
+}
+
+.row-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.card {
+  min-width: 200px;
+  height: 120px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #333;
+}
