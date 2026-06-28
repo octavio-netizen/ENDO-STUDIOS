@@ -135,16 +135,16 @@ scrollbar-width: none;
 mask-image: linear-gradient(
 to right,
 transparent 0%,
-black 10%,
-black 90%,
+black 3%,
+black 97%,
 transparent 100%
 );
 
 -webkit-mask-image: linear-gradient(
 to right,
 transparent 0%,
-black 10%,
-black 90%,
+black 3%,
+black 97%,
 transparent 100%
 );
 }
