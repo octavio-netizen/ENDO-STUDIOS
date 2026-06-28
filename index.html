@@ -1,16 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>ENDO STUDIOS</title>
-</head>
-<body>
-    <h1>ENDO STUDIOS</h1>
-    <p>Bienvenido al sitio oficial de ENDO STUDIOS.</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h2>Proyectos</h2>
-    <ul>
-        <li>Nuke Argentum</li>
-        <li>D.E.I.M.O.S OS</li>
-    </ul>
+<title>ENDO STUDIOS</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#111827,#1f2937);
+}
+
+h1{
+    font-size:4rem;
+    margin:0;
+}
+
+.subtitulo{
+    color:#b0b0b0;
+    font-size:1.2rem;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.tarjetas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.tarjeta{
+    background:#161b22;
+    padding:20px;
+    border-radius:12px;
+}
+
+.tarjeta h3{
+    margin-top:0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ENDO STUDIOS</h1>
+
+    <p class="subtitulo">
+        Videojuegos, tecnología, robótica y proyectos experimentales
+    </p>
+
+    <a class="boton" href="#proyectos">
+        Ver proyectos
+    </a>
+</header>
+
+<section>
+    <h2>Sobre nosotros</h2>
+
+    <p>
+        ENDO STUDIOS es un estudio independiente enfocado en la creación
+        de videojuegos, prototipos tecnológicos, robótica, sistemas y
+        proyectos creativos.
+    </p>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos destacados</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>☢️ Nuke Argentum</h3>
+            <p>
+                Administra un búnker argentino después de una guerra nuclear.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>💻 D.E.I.M.O.S OS</h3>
+            <p>
+                Sistema operativo conceptual desarrollado dentro del universo ENDO.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🤖 Proyectos Tecnológicos</h3>
+            <p>
+                Robots, dispositivos experimentales y desarrollos electrónicos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Archivo ENDO</h2>
+
+    <p>
+        Más de 50 proyectos, prototipos e ideas desarrolladas a lo largo de los años.
+    </p>
+</section>
+
+<footer>
+    © 2026 ENDO STUDIOS
+</footer>
+
 </body>
 </html>
