@@ -111,41 +111,7 @@ background: #d9d9d9;
 .row {
 position: relative;
 padding: 20px 40px;
-}
-
-.row::before,
-.row::after {
-content: "";
-
-position: absolute;
-
-top: 0;
-bottom: 0;
-
-width: 80px;
-
-z-index: 10;
-pointer-events: none;
-}
-
-.row::before {
-left: 0;
-
-background: linear-gradient(
-to right,
-#141414,
-transparent
-);
-}
-
-.row::after {
-right: 0;
-
-background: linear-gradient(
-to left,
-#141414,
-transparent
-);
+overflow: hidden;
 }
 
 .row h2 {
@@ -164,6 +130,23 @@ overflow-y: hidden;
 padding: 0 20px 15px 20px;
 
 scrollbar-width: none;
+
+/* DEGRADADO EN LOS BORDES */
+mask-image: linear-gradient(
+to right,
+transparent 0%,
+black 10%,
+black 90%,
+transparent 100%
+);
+
+-webkit-mask-image: linear-gradient(
+to right,
+transparent 0%,
+black 10%,
+black 90%,
+transparent 100%
+);
 }
 
 .row-scroll::-webkit-scrollbar {
