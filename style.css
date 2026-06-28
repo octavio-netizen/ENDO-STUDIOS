@@ -173,10 +173,10 @@ display: none;
 /* CARDS ESTILO NETFLIX */
 
 .card {
-  width: 480px;
-  min-width: 480px;
+  width: 360px;
+  min-width: 360px;
 
-  height: 270px;
+  height: 202px;
 
   border-radius: 12px;
   overflow: hidden;
