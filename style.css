@@ -1,6 +1,6 @@
 body {
 margin: 0;
-background: #141414;
+background: #0b0b0b;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +30,8 @@ z-index: 1000;
 .logo {
 font-size: 28px;
 font-weight: bold;
-color: #e50914;
+color: #00BFFF;
+text-shadow: 0 0 10px rgba(0,191,255,0.5);
 }
 
 .nav a {
@@ -41,7 +42,7 @@ transition: 0.2s;
 }
 
 .nav a:hover {
-color: #b3b3b3;
+color: #00BFFF;
 }
 
 /* HERO */
@@ -57,9 +58,9 @@ padding: 0 60px;
 background:
 linear-gradient(
 to top,
-#141414 0%,
-rgba(20,20,20,0.3) 50%,
-rgba(20,20,20,0.2) 100%
+#0b0b0b 0%,
+rgba(11,11,11,0.3) 50%,
+rgba(11,11,11,0.2) 100%
 ),
 linear-gradient(
 to right,
@@ -98,12 +99,12 @@ font-weight: bold;
 
 cursor: pointer;
 
-background: white;
-color: black;
+background: #00BFFF;
+color: white;
 }
 
 .hero-content button:hover {
-background: #d9d9d9;
+background: #33CCFF;
 }
 
 /* SECCIONES */
@@ -153,33 +154,37 @@ transparent 100%
 display: none;
 }
 
-/* CARDS ESTILO NETFLIX */
+/* CARDS */
 
 .card {
-  width: 360px;
-  min-width: 360px;
+width: 360px;
+min-width: 360px;
 
-  height: 202px;
+height: 202px;
 
-  border-radius: 12px;
-  overflow: hidden;
+border-radius: 12px;
+overflow: hidden;
 
-  background: #222;
+background: #222;
 
-  transition: transform 0.2s ease;
-  cursor: pointer;
+transition: all 0.2s ease;
+cursor: pointer;
 }
 
 .card:hover {
-  transform: scale(1.08);
+transform: scale(1.08);
+
+box-shadow:
+0 0 15px rgba(0,191,255,0.4),
+0 0 30px rgba(0,191,255,0.2);
 }
 
 .card-image {
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 
-  object-fit: cover;
-  display: block;
+object-fit: cover;
+display: block;
 }
 
 /* TITULO SOBRE IMAGEN */
@@ -214,12 +219,13 @@ padding: 120px 30px 40px 30px;
 
 .section h2 {
 margin-bottom: 20px;
+color: #00BFFF;
 }
 
 /* TIMELINE */
 
 .timeline {
-border-left: 3px solid #e50914;
+border-left: 3px solid #00BFFF;
 padding-left: 25px;
 }
 
@@ -238,7 +244,7 @@ height: 14px;
 
 border-radius: 50%;
 
-background: #e50914;
+background: #00BFFF;
 
 left: -34px;
 top: 5px;
@@ -249,7 +255,7 @@ top: 5px;
 .btn {
 display: inline-block;
 
-background: #e50914;
+background: #00BFFF;
 color: white;
 
 padding: 12px 20px;
@@ -260,5 +266,5 @@ text-decoration: none;
 }
 
 .btn:hover {
-background: #c40812;
+background: #33CCFF;
 }
