@@ -150,7 +150,20 @@ transparent 100%
 }
 
 .row-scroll::-webkit-scrollbar {
-display: none;
+height: 10px;
+}
+
+.row-scroll::-webkit-scrollbar-track {
+background: #111;
+}
+
+.row-scroll::-webkit-scrollbar-thumb {
+background: #00BFFF;
+border-radius: 10px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb:hover {
+background: #33CCFF;
 }
 
 /* CARDS */
